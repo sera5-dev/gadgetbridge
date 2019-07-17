@@ -206,6 +206,8 @@ public class LiveActivityFragment extends AbstractChartFragment {
         if(mHeartRate > 100) {
             MediaPlayer mPlayer2;
             mPlayer2= MediaPlayer.create(getContext(), R.raw.alikhlas);
+
+            if(!mPlayer2.isPlaying())
             mPlayer2.start();
         }
 
